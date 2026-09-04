@@ -23,4 +23,6 @@ jobs:
           git add -f gallery.html sgw_data.json sgw_raw_sample.json
 
           git commit -m "Daily auction refresh" || echo "Nothing new to commit"
+          git pull --rebase origin main
+
           git push
