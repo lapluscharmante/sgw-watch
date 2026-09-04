@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests
-      - run: python sgw_search.py
+      - run: python sgw_search.py --debug
       - run: |
           git config user.name "sgw-bot"
           git config user.email "actions@users.noreply.github.com"
