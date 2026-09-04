@@ -73,8 +73,9 @@ TEMPLATE_FILE = OUT_DIR / "gallery_template.html"
 DEBUG_SAMPLE_FILE = OUT_DIR / "sgw_raw_sample.json"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    # This exact User-Agent is used by a confirmed-working third-party client;
+    # shopgoodwill.com is known to reject requests using the default requests UA.
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0",
     "Content-Type": "application/json",
 }
 
@@ -129,33 +130,35 @@ def search_term(session, term, debug=False):
     results = []
     page = 1
     while True:
+        # IMPORTANT: shopgoodwill's API gives every field except searchText a
+        # working default. Earlier versions of this script guessed extra field
+        # names (closedAuctions, layout, sortColumn as a string, etc.) that
+        # aren't real parameters and appear to have silently zeroed out every
+        # search. Keep this body minimal and confirmed.
         body = {
             "searchText": term,
             "page": page,
             "pageSize": PAGE_SIZE,
-            "sortColumn": "endTime",
-            "sortDescending": False,
-            "categoryId": 0,
-            "layout": "grid",
-            "searchBuyNowOnly": False,
-            "searchPickupOnly": False,
-            "searchNoReserveOnly": False,
-            "searchOneCentShippingOnly": False,
-            "closedAuctions": False,
         }
         resp = session.post(SEARCH_ENDPOINT, json=body, headers=HEADERS, timeout=20)
         resp.raise_for_status()
         payload = resp.json()
 
         if debug and page == 1 and not DEBUG_SAMPLE_FILE.exists():
-            DEBUG_SAMPLE_FILE.write_text(json.dumps(payload, indent=2)[:20000])
-            print(f"[debug] wrote raw sample response to {DEBUG_SAMPLE_FILE}")
+            # Write the full response, not a truncated slice — shopgoodwill's
+            # category tree alone can run past 20k characters and was eating
+            # the whole debug budget before reaching the actual results.
+            DEBUG_SAMPLE_FILE.write_text(json.dumps(payload, indent=2))
+            print(f"[debug] wrote full raw sample response to {DEBUG_SAMPLE_FILE}")
 
-        items = (
-            payload.get("searchResults", {}).get("items")
-            or payload.get("items")
-            or []
-        )
+        # A confirmed-working third-party client treats a missing
+        # categoryListModel as the signal of a real error response.
+        if payload.get("categoryListModel", None) is None:
+            print(f"  ! unexpected/error response for '{term}' (no categoryListModel)")
+            break
+
+        search_results = payload.get("searchResults") or {}
+        items = search_results.get("items") or []
         if not items:
             break
 
@@ -183,7 +186,7 @@ def search_term(session, term, debug=False):
             if listing["id"] and listing["url"]:
                 results.append(listing)
 
-        total_count = payload.get("searchResults", {}).get("itemCount")
+        total_count = search_results.get("itemCount")
         page += 1
         time.sleep(REQUEST_DELAY_SECONDS)
 
