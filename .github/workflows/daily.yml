@@ -16,7 +16,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - run: git pull origin main
+      - run: git fetch origin main && git reset --hard origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -27,5 +27,4 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add -f gallery.html sgw_data.json sgw_raw_sample.json
           git commit -m "Daily auction refresh" || echo "Nothing new to commit"
-          git pull origin main --no-edit -X ours
           git push
