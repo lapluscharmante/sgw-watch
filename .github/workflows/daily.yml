@@ -1,0 +1,25 @@
+name: Daily ShopGoodwill Search
+
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python sgw_search.py
+      - run: |
+          git config user.name "sgw-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add gallery.html sgw_data.json
+          git commit -m "Daily auction refresh" || echo "Nothing new to commit"
+          git push
