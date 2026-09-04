@@ -20,6 +20,7 @@ jobs:
       - run: |
           git config user.name "sgw-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add gallery.html sgw_data.json
+          git add -f gallery.html sgw_data.json sgw_raw_sample.json
+
           git commit -m "Daily auction refresh" || echo "Nothing new to commit"
           git push
