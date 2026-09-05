@@ -22,6 +22,9 @@ jobs:
           python-version: '3.11'
       - run: pip install requests
       - run: python sgw_search.py --debug
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+
       - run: |
           git config user.name "sgw-bot"
           git config user.email "actions@users.noreply.github.com"
