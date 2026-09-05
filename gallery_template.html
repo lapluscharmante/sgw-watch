@@ -184,12 +184,6 @@
       </select>
     </div>
     <div>
-      <label for="filterTerm">Term</label>
-      <select id="filterTerm">
-        <option value="">All terms</option>
-      </select>
-    </div>
-    <div>
       <input type="text" id="searchBox" placeholder="Filter by keyword in title...">
     </div>
     <div class="count-pill" id="countPill"></div>
@@ -226,7 +220,6 @@
 
     var grid = document.getElementById('grid');
     var sortBy = document.getElementById('sortBy');
-    var filterTerm = document.getElementById('filterTerm');
     var searchBox = document.getElementById('searchBox');
     var countPill = document.getElementById('countPill');
     var emptyState = document.getElementById('emptyState');
@@ -244,22 +237,6 @@
       });
       return node;
     }
-
-    // Populate the term filter dropdown from whatever terms are present in the data.
-    var allTerms = [];
-    LISTINGS.forEach(function (item) {
-      var raw = item.matched_term || '';
-      raw.split(',').forEach(function (t) {
-        var trimmed = t.trim();
-        if (trimmed && allTerms.indexOf(trimmed) === -1) allTerms.push(trimmed);
-      });
-    });
-    allTerms.sort().forEach(function (term) {
-      var opt = document.createElement('option');
-      opt.value = term;
-      opt.textContent = term;
-      filterTerm.appendChild(opt);
-    });
 
     function fmtMoney(n) {
       if (n === null || n === undefined || n === '') return '\u2014';
@@ -317,25 +294,15 @@
       ]);
       body.appendChild(el('div', 'card-row', [endSpan]));
 
-      var firstTerm = (item.matched_term || '').split(',')[0].trim();
-      if (firstTerm) {
-        body.appendChild(el('span', 'badge', [text(firstTerm)]));
-      }
-
       card.appendChild(body);
       return card;
     }
 
     function render() {
       var sortVal = sortBy.value;
-      var termVal = filterTerm.value;
       var searchVal = searchBox.value.trim().toLowerCase();
 
       var items = LISTINGS.filter(function (l) {
-        if (termVal) {
-          var terms = (l.matched_term || '').split(',').map(function (t) { return t.trim(); });
-          if (terms.indexOf(termVal) === -1) return false;
-        }
         if (searchVal && (l.title || '').toLowerCase().indexOf(searchVal) === -1) return false;
         return true;
       });
@@ -358,7 +325,6 @@
     }
 
     sortBy.addEventListener('change', render);
-    filterTerm.addEventListener('change', render);
     searchBox.addEventListener('input', render);
     render();
   })();
