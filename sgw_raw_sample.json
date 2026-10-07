@@ -1,33 +1,5 @@
 [
   {
-    "itemId": "279311629",
-    "listingUrl": "https://shopgoodwill.com/item/279311629",
-    "title": "Alpina Touring Sport STC Cross-Country Ski Boots Size 45 Model 5719-1K",
-    "status": "ACTIVE",
-    "auctionState": "active",
-    "currentPrice": 24.99,
-    "minimumBid": 24.99,
-    "startingPrice": 24.99,
-    "buyNowPrice": 34.99,
-    "numBids": 0,
-    "shippingPrice": 5.99,
-    "oneCentShipping": false,
-    "sellerId": 8,
-    "endTime": "2026-10-07T18:01:00",
-    "startTime": "2026-10-03T01:24:27.643",
-    "remainingTime": "1d 7h",
-    "categoryId": 349,
-    "categoryName": "Winter Sports",
-    "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-03\\65635e87-d92b-4a80-b45b-c0aeae1b36d7anza_1003t1.jpeg",
-    "images": [
-      "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-03\\65635e87-d92b-4a80-b45b-c0aeae1b36d7anza_1003t1.jpeg"
-    ],
-    "sourceId": "search:searchText=1k",
-    "sourceType": "search",
-    "sourceLabel": "1k",
-    "scrapedAt": "2026-10-06T17:08:09.616Z"
-  },
-  {
     "itemId": "279312098",
     "listingUrl": "https://shopgoodwill.com/item/279312098",
     "title": "Adidas FTR LEGO RNNB62 Kids Sneakers Size 11K Black Red Green Yellow",
@@ -43,7 +15,7 @@
     "sellerId": 8,
     "endTime": "2026-10-07T18:12:00",
     "startTime": "2026-10-03T01:47:08.787",
-    "remainingTime": "1d 8h",
+    "remainingTime": "7h 26m",
     "categoryId": 166,
     "categoryName": "Accessories",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-03\\58c3e3ae-332d-4fa6-aa4a-f59aa4f2bd7fwbas_1003t1.jpeg",
@@ -53,7 +25,7 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-06T17:08:09.617Z"
+    "scrapedAt": "2026-10-07T17:45:29.252Z"
   },
   {
     "itemId": "279302901",
@@ -71,7 +43,7 @@
     "sellerId": 8,
     "endTime": "2026-10-07T18:15:00",
     "startTime": "2026-10-02T21:19:46.4",
-    "remainingTime": "1d 8h",
+    "remainingTime": "7h 29m",
     "categoryId": 401,
     "categoryName": "Receivers & Radios",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-03\\83d10fb1-f0ea-4faa-bf3d-367b5e23ed1aon42_1003t1.jpeg",
@@ -81,7 +53,7 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-06T17:08:09.617Z"
+    "scrapedAt": "2026-10-07T17:45:29.252Z"
   },
   {
     "itemId": "279146851",
@@ -99,7 +71,7 @@
     "sellerId": 16,
     "endTime": "2026-10-08T19:20:00",
     "startTime": "2026-10-01T18:58:02",
-    "remainingTime": "2d 9h",
+    "remainingTime": "1d 8h",
     "categoryId": 824,
     "categoryName": "Shoes Boys'",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/16\\Items\\2026-07-25\\5b21bde5-b2ad-42a4-a67d-fef1474a8beater1_0725t1.jpeg",
@@ -109,7 +81,7 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-06T17:08:09.617Z"
+    "scrapedAt": "2026-10-07T17:45:29.252Z"
   },
   {
     "itemId": "279433645",
@@ -127,7 +99,7 @@
     "sellerId": 8,
     "endTime": "2026-10-09T18:52:00",
     "startTime": "2026-10-04T22:52:00.55",
-    "remainingTime": "3d 8h",
+    "remainingTime": "2d 8h",
     "categoryId": 899,
     "categoryName": "Size 4",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-05\\6187149f-5860-45d3-927b-bca58064fcd6wlin_1005t1.jpeg",
@@ -137,6 +109,34 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-06T17:08:09.617Z"
+    "scrapedAt": "2026-10-07T17:45:29.252Z"
+  },
+  {
+    "itemId": "279438432",
+    "listingUrl": "https://shopgoodwill.com/item/279438432",
+    "title": "Lacoste Strike Nubuck 51K Sneakers 10SAM0122 UK12 EUR47 USA13 Light Grey",
+    "status": "ACTIVE",
+    "auctionState": "active",
+    "currentPrice": 19.99,
+    "minimumBid": 19.99,
+    "startingPrice": 19.99,
+    "buyNowPrice": 24.99,
+    "numBids": 0,
+    "shippingPrice": 5.99,
+    "oneCentShipping": false,
+    "sellerId": 8,
+    "endTime": "2026-10-09T18:59:00",
+    "startTime": "2026-10-05T02:15:38.47",
+    "remainingTime": "2d 8h",
+    "categoryId": 1923,
+    "categoryName": "Size 13",
+    "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-05\\ff6f63d2-93b9-441b-9388-aeff6fea0f30wtig_1005t1.jpeg",
+    "images": [
+      "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-05\\ff6f63d2-93b9-441b-9388-aeff6fea0f30wtig_1005t1.jpeg"
+    ],
+    "sourceId": "search:searchText=1k",
+    "sourceType": "search",
+    "sourceLabel": "1k",
+    "scrapedAt": "2026-10-07T17:45:29.252Z"
   }
 ]
