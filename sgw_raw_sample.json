@@ -1,33 +1,5 @@
 [
   {
-    "itemId": "279146851",
-    "listingUrl": "https://shopgoodwill.com/item/279146851",
-    "title": "Adidas Kids Grand Court 00s JR5568 Gray Navy Blue Hook & Loop Sneaker Shoes 1K",
-    "status": "ACTIVE",
-    "auctionState": "active",
-    "currentPrice": 5,
-    "minimumBid": 5,
-    "startingPrice": 5,
-    "buyNowPrice": 5.99,
-    "numBids": 0,
-    "shippingPrice": 0,
-    "oneCentShipping": false,
-    "sellerId": 16,
-    "endTime": "2026-10-08T19:20:00",
-    "startTime": "2026-10-01T18:58:02",
-    "remainingTime": "8h 30m",
-    "categoryId": 824,
-    "categoryName": "Shoes Boys'",
-    "imageURL": "https://shopgoodwillimages.azureedge.net/production/16\\Items\\2026-07-25\\5b21bde5-b2ad-42a4-a67d-fef1474a8beater1_0725t1.jpeg",
-    "images": [
-      "https://shopgoodwillimages.azureedge.net/production/16\\Items\\2026-07-25\\5b21bde5-b2ad-42a4-a67d-fef1474a8beater1_0725t1.jpeg"
-    ],
-    "sourceId": "search:searchText=1k",
-    "sourceType": "search",
-    "sourceLabel": "1k",
-    "scrapedAt": "2026-10-08T17:49:35.139Z"
-  },
-  {
     "itemId": "279433645",
     "listingUrl": "https://shopgoodwill.com/item/279433645",
     "title": "Betsey Johnson Women's Ivory Dress FR01K69 Size 4 V-Neck Ruffle Hem",
@@ -43,7 +15,7 @@
     "sellerId": 8,
     "endTime": "2026-10-09T18:52:00",
     "startTime": "2026-10-04T22:52:00.55",
-    "remainingTime": "1d 8h",
+    "remainingTime": "8h 27m",
     "categoryId": 899,
     "categoryName": "Size 4",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-05\\6187149f-5860-45d3-927b-bca58064fcd6wlin_1005t1.jpeg",
@@ -53,7 +25,7 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-08T17:49:35.140Z"
+    "scrapedAt": "2026-10-09T17:24:26.595Z"
   },
   {
     "itemId": "279438432",
@@ -71,7 +43,7 @@
     "sellerId": 8,
     "endTime": "2026-10-09T18:59:00",
     "startTime": "2026-10-05T02:15:38.47",
-    "remainingTime": "1d 8h",
+    "remainingTime": "8h 34m",
     "categoryId": 1923,
     "categoryName": "Size 13",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/8\\Item\\2026-10-05\\ff6f63d2-93b9-441b-9388-aeff6fea0f30wtig_1005t1.jpeg",
@@ -81,7 +53,7 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-08T17:49:35.140Z"
+    "scrapedAt": "2026-10-09T17:24:26.596Z"
   },
   {
     "itemId": "279201984",
@@ -99,7 +71,7 @@
     "sellerId": 200,
     "endTime": "2026-10-09T19:11:00",
     "startTime": "2026-10-02T05:20:25",
-    "remainingTime": "1d 8h",
+    "remainingTime": "8h 46m",
     "categoryId": 1145,
     "categoryName": "Size XXL",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/200\\Items\\2026-09-24\\941e367d-e650-4a00-a683-620eb462480fnd32_0924t1.jpeg",
@@ -109,7 +81,7 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-08T17:49:35.140Z"
+    "scrapedAt": "2026-10-09T17:24:26.596Z"
   },
   {
     "itemId": "279422923",
@@ -127,7 +99,7 @@
     "sellerId": 9,
     "endTime": "2026-10-09T19:40:00",
     "startTime": "2026-10-04T20:18:20.153",
-    "remainingTime": "1d 8h",
+    "remainingTime": "9h 15m",
     "categoryId": 1918,
     "categoryName": "Size 10.5",
     "imageURL": "https://shopgoodwillimages.azureedge.net/production/9\\Item\\2026-10-04\\54ca5499-9b63-4fc9-887d-2d95a0ee548dsare_1004t1.jpeg",
@@ -137,6 +109,34 @@
     "sourceId": "search:searchText=1k",
     "sourceType": "search",
     "sourceLabel": "1k",
-    "scrapedAt": "2026-10-08T17:49:35.140Z"
+    "scrapedAt": "2026-10-09T17:24:26.596Z"
+  },
+  {
+    "itemId": "279956618",
+    "listingUrl": "https://shopgoodwill.com/item/279956618",
+    "title": "UGG F27021K Slip-On Casual Shoes Beige Woven Textile US 7.5",
+    "status": "ACTIVE",
+    "auctionState": "active",
+    "currentPrice": 10.99,
+    "minimumBid": 10.99,
+    "startingPrice": 10.99,
+    "buyNowPrice": 11.99,
+    "numBids": 0,
+    "shippingPrice": 0,
+    "oneCentShipping": false,
+    "sellerId": 181,
+    "endTime": "2026-10-10T18:07:00",
+    "startTime": "2026-10-08T20:00:31.34",
+    "remainingTime": "1d 7h",
+    "categoryId": 1702,
+    "categoryName": "Size 7.5",
+    "imageURL": "https://shopgoodwillimages.azureedge.net/production/181\\Item\\2026-10-08\\9bcadc34-311b-4310-b055-962307c32d83wood_1008t1.jpeg",
+    "images": [
+      "https://shopgoodwillimages.azureedge.net/production/181\\Item\\2026-10-08\\9bcadc34-311b-4310-b055-962307c32d83wood_1008t1.jpeg"
+    ],
+    "sourceId": "search:searchText=1k",
+    "sourceType": "search",
+    "sourceLabel": "1k",
+    "scrapedAt": "2026-10-09T17:24:26.596Z"
   }
 ]
